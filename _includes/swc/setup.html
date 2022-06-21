@@ -3,7 +3,7 @@
 {% include warning-curriculum.html %}
 {% endunless %}
 
-
+{% include install_instructions/shell.html %}
 
 {% if site.flavor == "r" %}
 {% include install_instructions/r.html %}
@@ -12,7 +12,7 @@
 {% elsif site.flavor == "FIXME" %}
 {% include install_instructions/r.html %}
 {% include install_instructions/python.html %}
-{% include install_instructions/git.html %}
+
 {% else %}
 {% include warning-flavor.html %}
 {% endif %}
@@ -22,7 +22,6 @@ The following setup instructions are commented out because Carpentries workshops
 cover the these topics less frequently. Please uncomment the lines that
 correspond to the topics covered in your workshop.
 {% include install_instructions/shell.html %}
-
 {% include install_instructions/editor.html %}
 {% include install_instructions/sql.html %}
 {% include install_instructions/openrefine.html %}
